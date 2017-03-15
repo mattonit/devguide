@@ -15,12 +15,77 @@
 	</header>
 
 	<main>
-		<header class="heading">
+<!-- 		<header class="heading">
 			<h2>Table of Contents</h2>
-		</header>
+		</header> -->
 		<section class="section" id="table-of-contents">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h2>Key Rules</h2>
+			</div>
+			<div class="col">
+				<ul>
+					<li>
+						<p>One of my favorite rules in programming is: every single line of code should appear to be written by a single person.</p>
+					</li>
+					
+					<li>
+						<p>Don't repeat your own code. Your code should be re-useable.</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>HTML5 Doctype</h3>
+				<ul>
+					<li><code>&lt;!DOCTYPE html&gt;</code> must be the very first tag in your HTML document before <code>&lt;html&gt;</code> tag</li>
+					<li>HTML5 Dcotype declaration <strong>isn't</strong> case sensitive</li>
+					<li>Always add <code>&lt;!DOCTYPE html&gt;</code> to your HTML document. This will let the browser know what kind of content to expect</li>
+				</ul>
+			</div>
+			<div class="col">
+<pre><code class="language-html" data-lang="html"><span class="cp">&lt;!DOCTYPE html&gt;</span>
+<span class="nt">&lt;html&gt;</span>
+    <span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;/head&gt;</span>
+<span class="nt">&lt;/html&gt;</span></code></pre>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Character encoding</h3>
+				<p>You should always declare charset in your HTML document to make sure that your content will be rendered correctly. Remember that charset declaration must be added to the <code>&lt;head&gt;</code> section.</p>
+			</div>
+			<div class="col">
+<pre><code class="language-html" data-lang="html"><span class="nt">&lt;head&gt;</span>
+    <span class="nt">&lt;meta</span> <span class="na">charset=</span><span class="s">"UTF-8"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;/head&gt;</span></code></pre>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<p>For HTML4 you should use <code>text/css</code> and <code>text/javascript</code> when including CSS and JavaScript files. In HTML5 there's no need to specify the type</p>
+			</div>
+			<div class="col">
+				<pre><code class="language-html" data-lang="html"><span class="c">&lt;!-- External CSS --&gt;</span>
+<span class="nt">&lt;link</span> <span class="na">rel=</span><span class="s">"stylesheet"</span> <span class="na">src=</span><span class="s">"devguide.css"</span><span class="nt">&gt;</span>
+
+<span class="c">&lt;!-- In-document CSS --&gt;</span>
+<span class="nt">&lt;style&gt;</span>
+    <span class="c">/* ... */</span>
+<span class="nt">&lt;/style&gt;</span>
+
+<span class="c">&lt;!-- JavaScript --&gt;</span>
+<span class="nt">&lt;script</span> <span class="na">src=</span><span class="s">"code-guide.js"</span><span class="nt">&gt;&lt;/script&gt;</span></code></pre>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Internet Explorer Version</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -29,7 +94,22 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Always Validate</h3>
+				<p>To make sure that your code use HTML and CSS standards you should always validate your code. That will help you to create websites that would be rendered properly.</p>
+				<p>Validators will also help you to debug your code. Using them you get the list of things that you should fix.</p>
+			</div>
+			<div class="col">
+				<ul>
+					<li><a href="https://validator.w3.org/" target="_blank">HTML Validator</a></li>
+					<li><a href="https://jigsaw.w3.org/css-validator/" target="_blank">CSS Validator</a></li>
+					<li><a href="https://html5.validator.nu/" target="_blank">Validator for HTML5 documents</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Attributes order</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -38,7 +118,7 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Snake case vs. camel case</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -47,7 +127,7 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Reduce number of HTML tags</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -56,7 +136,41 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Classes names</h3>
+
+				<ul>
+					<li>
+						<p>Class names should be simply and self-describing. They should be understandable clearly define the destination of the class.</p>
+					</li>
+
+					<li>
+						<p>You should also avoid shortcuts that would be hard to understand. While <code>.btn</code> is a good class name for button, <code>.b</code> doesn't mean anything</p>
+					</li>
+
+					<li>
+						<p>Keep classes names as short as possible</p>
+					</li>
+				</ul>
+			</div>
+			<div class="col"> 
+				<pre><code class="language-html" data-lang="html"><span class="c">/* Good example */</span>
+<span class="nc">.no-padding</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="o">;</span>
+<span class="p">}</span>
+
+<span class="c">/* Bad example */</span>
+<span class="nc">.np</span> <span class="p">{</span>
+    <span class="k">padding</span><span class="o">:</span> <span class="m">0</span><span class="o">;</span>
+<span class="p">}</span></code></pre>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Use reset</h3>
+				Reset CSS removes all browser built-in styles. That will make all of the HTML elements completely unstyled
+
+				Normalize CSS makes built-in browser styles look consistent across browsers
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -65,7 +179,7 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Comments</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
@@ -74,10 +188,122 @@
 
 		<section class="section">
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Numquam quaerat perferendis quae pariatur consequuntur, vel repellendus earum maxime. Nostrum, tempora doloremque earum laudantium saepe perspiciatis modi aliquam velit vel corporis?</p>
+				<h3>Vendor Prefixes</h3>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Mobile First</h3>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Minify CSS/JS files and combine them</h3>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Don't use headings to change font size</h3>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Selectors</h3>
+				<ul>
+					<li><p>Avoid using <code>*</code> seletor</p></li>
+				</ul>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Combine common styles</h3>
+			</div>
+			<div class="col">
+				<pre><code class="language-html" data-lang="html">h1 {
+    color:#2E4148;
+}
+
+h2 {
+    color:#2E4148;
+}
+
+h3 {
+    color:#2E4148;
+}</code></pre>
+
+<pre><code class="language-html" data-lang="html">h1, h2, h3 {
+    color:#2E4148;
+}</code></pre>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Tabs or Spaces?</h3>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Don't use too many webfonts</h3>
+				<p>You shouldn't use too many webfonts on your website. When you load too many webfonts your page will load longer.</p>
+				<p>Also, when you use a lot of different fonts, your website may be less pretty and confuse your users.</p>
+				<p>It's recommended to use CDN services to load webfonts to your page. That will make your website load faster</p>
+			</div>
+			<div class="col">
+				<h4>Recommended services</h4>
+				<ul>
+					<li><a href="https://fonts.google.com/" target="_blank">Google Fonts</a></li>
+					<li><a href="https://fontlibrary.org" target="_blank">Open Font Library</a></li>
+					<li><a href="https://typekit.com" target="_blank">Adobe Typekit</a></li>
+				</ul>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>Classes vs ID</h3>
+			</div>
+			<div class="col">
+				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+			</div>
+		</section>
+
+		<section class="section">
+			<div class="col">
+				<h3>HEX instead of color name</h3>
+				<p>You should use hex color instead of color name to ensure that the color will be rendered properly in every browser</p>
+			</div>
+			<div class="col">
+				<pre><code class="language-html" data-lang="html"><span class="c">/* Good example */</span>
+<span class="k">color</span><span class="o">:</span> <span class="m">#fff</span><span class="o">;</span>
+
+<span class="c">/* Bad example */</span>
+<span class="k">color</span><span class="o">:</span> <span class="m">white</span><span class="o">;</span>
+</code></pre>
 			</div>
 		</section>
 	</main>
