@@ -86,9 +86,17 @@
 		<section class="section">
 			<div class="col">
 				<h3>Internet Explorer Version</h3>
+				<p>In some cases, you might need to choose what version of Internet Explorer the page should be rendered as.</p>
+				<p>It's recommended to put <code>X-UA-Compatible</code> tag as high as possible in your document head</p>
 			</div>
 			<div class="col">
-				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
+				<pre><code>
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"IE=8"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"IE=EmulateIE7"</span><span class="nt">&gt;</span>
+
+<span class="nt">&lt;meta</span> <span class="na">http-equiv=</span><span class="s">"x-ua-compatible"</span> <span class="na">content=</span><span class="s">"IE=edge"</span><span class="nt">&gt;</span>
+</code></pre>
 			</div>
 		</section>
 
@@ -180,6 +188,7 @@
 		<section class="section">
 			<div class="col">
 				<h3>Comments</h3>
+				<p>You shouldn't use a lot of comments in your code. Your code should be self-describing.</p>
 			</div>
 			<div class="col">
 				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Distinctio rerum impedit explicabo quasi laudantium, quam fuga aperiam sed tempore cupiditate voluptate, est ipsum eveniet nulla culpa reiciendis, dolorem, perferendis neque!</p>
